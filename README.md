@@ -7,4 +7,4 @@
  `npm install express` and `npm install mysql`  
  
 # How to use 
- In your command line type `node server.js`, open the browser and copy the local host url plus the PORT returned to you. Open the page, add a burger you'd like to eat and click the save button. Check in you database if the burger has been added.  
+ In your command line type `node server.js`, open the browser and copy the local host url plus the PORT returned to you. Open the page, add a burger you'd like to eat and click the save button. Check in your database whether the burger has been added.  
