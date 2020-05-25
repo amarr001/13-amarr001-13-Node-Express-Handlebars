@@ -1,45 +1,5 @@
-<h1>EAT DA BURGER</h1>
-
-<h2>Burgers Awaiting to be Devoured</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burger/burger-block devoured=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>Devoured Burgers</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burger/burger-block devoured=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add Burger</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="createburger">Burger:</label>
-    <input type="text" id="createburger" name="burger">
-  </div>
-
-  <div class="form-group">
-    <label for="slee">Devour now or eat later?</label><br>
-    <input type="radio" name="devoured" value="1" checked> Devoured!<br>
-    <input type="radio" name="devoured" value="0"> Eat later
-  </div>
-
-  <button type="submit">Add Burger</button>
-</form>
-
-
-<script type="text/javascript">
-  
+// Make sure we wait to attach our handlers until the DOM is fully loaded.
+$(function() {
     $(".change-data").on("click", function(event) {
       var id = $(this).data("id");
       var newDevour = $(this).data("devoured");
@@ -66,7 +26,7 @@
       event.preventDefault();
   
       var newBurger = {
-        burgers: $("#createburger [name=burger]").val().trim(),
+        burgers: $("#createburger").val().trim(),
         devoured: $("[name=devoured]:checked").val().trim()
       };
   
@@ -82,4 +42,4 @@
         }
       );
     });
-</script>
+  });
