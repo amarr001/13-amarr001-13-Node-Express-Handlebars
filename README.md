@@ -1,4 +1,4 @@
-# 13-Node-Express-Handlebars
+
 
 # Burger Logger (Node-Express-Handlebars)
  Burger logger created by using MySQL, Node, Express, Handlebars and a homemade ORM. The user input names of burgers they'd like to eat and can choose to devour those burgers later after submiting them. The app will store every burger added in the database, whether devoured or not
