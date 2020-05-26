@@ -1,10 +1,10 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
     $(".change-data").on("click", function(event) {
-      var id = $(this).data("id");
-      var newDevour = $(this).data("devoured");
+      let id = $(this).data("id");
+      let newDevour = $(this).data("devoured");
   
-      var newDevoured = {
+      let newDevoured = {
         devoured: newDevour
       };
   

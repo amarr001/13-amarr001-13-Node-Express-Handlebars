@@ -30,21 +30,21 @@
 
   <div class="form-group">
     <label for="slee">Devour now or eat later?</label><br>
-    <input type="radio" name="devoured" value="1" checked> Devoured!<br>
+    <input type="radio" name="devoured" value="1" checked> Devour now!<br>
     <input type="radio" name="devoured" value="0"> Eat later
   </div>
 
-  <button type="submit">Add Burger</button>
+  <button type="submit">Submit</button>
 </form>
 
+<script type="text/javascript" >
+// Make sure we wait to attach our handlers until the DOM is fully loaded.
 
-<script type="text/javascript">
-  
     $(".change-data").on("click", function(event) {
-      var id = $(this).data("id");
-      var newDevour = $(this).data("devoured");
+      let id = $(this).data("id");
+      let newDevour = $(this).data("devoured");
   
-      var newDevoured = {
+      let newDevoured = {
         devoured: newDevour
       };
   
@@ -82,4 +82,5 @@
         }
       );
     });
+  
 </script>
