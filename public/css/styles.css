@@ -5,6 +5,8 @@
  }
  .burgerList {
      list-style-type: none;
+     
+     
  }
  .burgerEach:before {
         content: '\1F354';
@@ -14,17 +16,21 @@
  }
  .burger-title {
      color: #d63447;
+     letter-spacing: 3px;
+     font-size: 80px;
  }
  .burgerColumns {
      color: #d63447;
-
+     
  }
  .change-data {
      background-color: #f57b51;
+     margin: 5px;
  }
  .delete-burger{
      background-color: #f6eedf;
+     margin: 5px;
  }
  .form-control {
-     width: 20%;
+     width: 150%;
  }
