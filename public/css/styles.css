@@ -1,6 +1,30 @@
 
  body {
-     background-color: burlywood;
+     background-color: #ffd31d;
+     font-family: 'Bangers';
  }
+ .burgerList {
+     list-style-type: none;
+ }
+ .burgerEach:before {
+        content: '\1F354';
+        margin-left: -20px;
+        margin-right: 10px;
+        
+ }
+ .burger-title {
+     color: #d63447;
+ }
+ .burgerColumns {
+     color: #d63447;
 
- 
+ }
+ .change-data {
+     background-color: #f57b51;
+ }
+ .delete-burger{
+     background-color: #f6eedf;
+ }
+ .form-control {
+     width: 20%;
+ }
