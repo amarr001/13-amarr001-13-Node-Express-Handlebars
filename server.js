@@ -1,8 +1,14 @@
 var express = require("express");
+var compression = require('compression')
 
 var PORT = process.env.PORT || 3000;
 
-var app = express();
+ 
+var app = express()
+ 
+// compress all responses
+app.use(compression())
+
 
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
