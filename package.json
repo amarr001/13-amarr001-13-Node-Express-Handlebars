@@ -4,7 +4,7 @@
   "description": "Burger logger created by using MySQL, Node, Express, Handlebars and a homemade ORM. The user input names of burgers they'd like to eat and can choose to devour those burgers later after submiting them. The app will store every burger added in the database, whether devoured or not",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "express-handlebars": "^4.0.4",
     "mysql": "^2.18.1",
     "mysql2": "^2.1.0"
